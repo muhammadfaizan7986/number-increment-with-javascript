@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        .count{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        i{
+            font-size: 3rem;
+            margin-right: 1rem;
+
+        }
+        #down{
+            display: none;
+            position: relative;
+            left: 53px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="heading">
+        <h1 class="inc">increment</h1>
+    </div>
+    <div class="count">
+        <h1 id="num">0</h1>
+        <i id="up" class="fa-solid fa-arrow-up"></i>
+        <i id="down" class="fa-solid fa-arrow-down"></i>
+    </div>
+</div>
+
+<script>
+    const num = document.querySelector("#num");
+    let up = document.querySelector("#up");
+    let down = document.querySelector("#down")
+    let count = 6464857847 ;
+    setInterval(() => { 
+        count++;
+        num.innerHTML = count;
+        if(count == 6969594994944){
+            count = 6464857847;
+        }
+
+    },10);
+</script>
+</body>
+</html>
